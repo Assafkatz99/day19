@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+}
+
+.parent{
+    padding: 1em;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;    
+}
+
+.container{
+    /* background-color: rgb(9, 62, 137);     */
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.box{  
+    width: 100%;
+    height: 100%;
+}
+
+.yellow{
+    background-color: rgba(233, 222, 100, 0.765);
+}
+.red{
+    background-color: rgb(244, 109, 109);
+}
+.blue{
+    background-color: rgb(86, 86, 254);
+}
+
+@media screen and (max-width:992px){
+    .remove{
+        display: none;
+    }
+    #lastContainer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    
+}
